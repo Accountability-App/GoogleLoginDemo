@@ -1,0 +1,8 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">loginDev</string>
+    <string name="title_activity_main">loginDev</string>
+    <string name="package_name">com.loginDev.accapp</string>
+    <string name="custom_url_scheme">com.loginDev.accapp</string>
+    <string name="server_client_id">838210463298-ghu4fp6kp4qhnbeue364g1cfhrnc21k0.apps.googleusercontent.com</string>
+</resources>
