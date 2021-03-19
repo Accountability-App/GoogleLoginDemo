@@ -43,10 +43,10 @@ To make the value available to our Android app we also need to make a change to 
 ```xml
 <?xml version='1.0' encoding='utf-8'?>
 <resources>
-    <string name="app_name">devdacticLogin</string>
-    <string name="title_activity_main">devdacticLogin</string>
-    <string name="package_name">com.devdactic.capalogin</string>
-    <string name="custom_url_scheme">com.devdactic.capalogin</string>
+    <string name="app_name">AccountabilityApp</string>
+    <string name="title_activity_main">AccountabilityApp</string>
+    <string name="package_name">com.AccountabilityApp.accapp</string>
+    <string name="custom_url_scheme">com.AccountabilityApp.accapp</string>
     <string name="server_client_id">REPLACEME.apps.googleusercontent.com</string>
 </resources>
 ```
