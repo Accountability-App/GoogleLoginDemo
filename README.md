@@ -31,8 +31,74 @@ onfiguration begins
 # Firebase Google Sign In Preparation
 In FireBase DB 
 **Add app** and select Android.
-SHA-1 signing certificate: used forsigning your APK for the Play Store in the end and hook app to google services
-get the fingerprint of debug key, which is 99% of the time automatically created at ~/.android/debug.keystore on your computer.
+SHA-1 signing certificate: used for signing APK for the Play Store in the end and hook app to google services
+get the fingerprint of debug key, which is 99% of the time automatically created at **~/.android/debug.keystore** on computer.
 ```
  keytool -list -v -alias androiddebugkey -keystore ~/.android/debug.keystore
  ```
+ download the google-services.json file and move it to the **android/app**
+ 
+To make the value available to our Android app we also need to make a change to the **android/app/src/main/res/values/strings.xml** and add an entry for the **server_client_id**
+
+```xml
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">devdacticLogin</string>
+    <string name="title_activity_main">devdacticLogin</string>
+    <string name="package_name">com.devdactic.capalogin</string>
+    <string name="custom_url_scheme">com.devdactic.capalogin</string>
+    <string name="server_client_id">REPLACEME.apps.googleusercontent.com</string>
+</resources>
+```
+You now want to copy from the OAuth 2.0 Client IDs section, the row Web client and more specific the Client ID in that row
+note: inside google APIs console or in .json with the .apps.googleusercontent.com extension in the oauth text field.
+Inside Firebase project, go to the Authentication menu, select the Sign-in method tab and activate Google sign in – after hitting safe, this fixed all the OAuth consent screen issues!
+ 
+ ## Capacitor Google Sign In Preparation – Android
+  we need to tell Android about the Capacitor plugin we installed. Therefore, we need to open the **android/app/src/main/java/com/AccountabilityApp/accapp/MainActivity.java**
+  ```java
+  2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+	
+package com.devdactic.capalogin;
+ 
+import android.os.Bundle;
+ 
+import com.getcapacitor.BridgeActivity;
+import com.getcapacitor.Plugin;
+ 
+import java.util.ArrayList;
+**import com.codetrixstudio.capacitor.GoogleAuth.GoogleAuth;**
+ 
+public class MainActivity extends BridgeActivity {
+  @Override
+  public void onCreate(Bundle savedInstanceState) {
+    super.onCreate(savedInstanceState);
+ 
+    // Initializes the Bridge
+    this.init(savedInstanceState, new ArrayList<Class<? extends Plugin>>() {{
+      // Additional plugins you've installed go here
+      **add(GoogleAuth.class);**
+    }});
+  }
+}
+```
