@@ -57,29 +57,7 @@ Inside Firebase project, go to the Authentication menu, select the Sign-in metho
  ## Capacitor Google Sign In Preparation – Android
   we need to tell Android about the Capacitor plugin we installed. Therefore, we need to open the **android/app/src/main/java/com/AccountabilityApp/accapp/MainActivity.java**
   ```java
-  2
-3
-4
-5
-6
-7
-8
-9
-10
-11
-12
-13
-14
-15
-16
-17
-18
-19
-20
-21
-22
-	
-package com.devdactic.capalogin;
+package com.AccountabilityApp.capalogin;
  
 import android.os.Bundle;
  
@@ -101,4 +79,9 @@ public class MainActivity extends BridgeActivity {
     }});
   }
 }
+```
+Open ~/AccountabilityApp/src/idex.html and put the following line with your client ID into the head tag of your page:
+```html
+ <meta name="google-signin-client_id" content="REPLACEME.apps.googleusercontent.com">:w
+```
 ```
