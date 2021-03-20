@@ -1,5 +1,9 @@
 # GoogleLoginDemo WIP
-Status: <span style="color:red">BROKEN</span>.
+Status:
+```diff
+-BROKEN AF
+```
+
 For capacitor google sign in we need :
 ```
 npm i @codetrix-studio/capacitor-google-auth
