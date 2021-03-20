@@ -1,0 +1,88 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="secondary">
+      <ion-button>Edit Profile</ion-button>
+    </ion-buttons>
+    <ion-title>My Profile</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+
+  <ion-card>
+    <div class="item default-profile-background"></div>
+
+    <ion-card-content body style="background-color:#FFFCD6">
+      <ion-label class="username-label" color="dark" slot="start">Jacob (Username) @ChickenNuggs</ion-label>
+      <ion-avatar slot="start">
+      <img src="https://gravatar.com/avatar/dba6bae8c566f9d4041fb9cd9ada7741?d=identicon&f=y">
+      </ion-avatar>
+      My name is Jacob and I like doing things and stuff but
+      I can't always get them done on time. So I use this app
+      to help me stay on top of things. Thanks in advance for the help :)
+    </ion-card-content>
+    <!-- List of Text Items -->
+    <ion-list body style="background-color:#7FB069">
+      <ion-label stacked class="current-tasks-label" color="dark" TextDecorations="Underline">Current Tasks</ion-label>
+      <ion-item>
+          <div class="ion-text-start">
+            <h3>Write This Stuff:</h3>
+            Yeah so I signed up for this class so ig I gotta write this stuff and make this page otherwise
+            I will fail and will let my team down and I'm not about that life.
+          </div>
+      </ion-item>
+      <ion-item>
+          <div class="ion-text-start">
+            <h3>Task Functionality:</h3>
+            When you click/tap a task, it should let you view it and probably edit it.
+          </div>
+      </ion-item>
+      <ion-item>
+          <div class="ion-text-start">
+            <h3>Wake up on Thursday:</h3>
+            On Thursday, March 11th, wake up at 8:00 AM
+          </div>
+      </ion-item>
+      <ion-item>
+          <div class="ion-text-start">
+            <h3>Task 4:</h3>
+            This is an example of a long description for a task.
+            This is an example of a long description for a task.
+            This is an example of a long description for a task.
+            This is an example of a long description for a task.
+            This is an example of a long description for a task.
+            This is an example of a long description for a task.
+            This is an example of a long description for a task.
+            This is an example of a long description for a task.
+            This is an example of a long description for a task.
+            This is an example of a long description for a task.
+          </div>
+      </ion-item>
+      <ion-item>
+          <div class="ion-text-start">
+            <h3>Task 5:</h3>
+            This is an example yet another description for yet another task
+          </div>
+      </ion-item>
+    </ion-list>
+
+  </ion-card>
+
+</ion-content>
+
+  <!-- Me trying to get file upload and stuff to work
+  <input type="file" (change)="loadImageFromDevice($event)" id="file-input"
+    accept="image/png, image/jpeg">  -->
+
+  <!-- Me trying to get file upload and stuff to work
+  <input type="file"  accept="image/*" name="image" id="file"  onchange="loadFile(event)" style="display: none;">
+  <label for="file" style="cursor: pointer;">Upload Image</label>
+  <img id="output" width="200" />
+
+  <script>
+  var loadFile = function(event) {
+	  var image = document.getElementById('output');
+	  image.src = URL.createObjectURL(event.target.files[0]);
+  };
+  </script>
+  -->

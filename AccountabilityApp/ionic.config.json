@@ -1,0 +1,7 @@
+{
+  "name": "AccountabilityApp",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

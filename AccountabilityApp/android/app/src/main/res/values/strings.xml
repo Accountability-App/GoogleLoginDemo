@@ -1,0 +1,8 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">AccountabilityApp</string>
+    <string name="title_activity_main">AccountabilityApp</string>
+    <string name="package_name">com.AccountabilityApp.accapp</string>
+    <string name="custom_url_scheme">com.AccountabilityApp.accapp</string>
+    <string name="server_client_id">514146284743-hsp9s1i4piuott1q3u1c7rdfbnl4spdb.apps.googleusercontent.com</string>
+</resources>

@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "514146284743",
+    "firebase_url": "https://accountability-app-29b4b-default-rtdb.firebaseio.com",
+    "project_id": "accountability-app-29b4b",
+    "storage_bucket": "accountability-app-29b4b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:514146284743:android:575d309e5fa6b626433ae2",
+        "android_client_info": {
+          "package_name": "com.AccountabilityApp.accapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "514146284743-otvh0ippmhfueptpj724ro5l38jfjeju.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.AccountabilityApp.accapp",
+            "certificate_hash": "fc892b7fffc8751dfe307644477fe16d6c677084"
+          }
+        },
+        {
+          "client_id": "514146284743-hsp9s1i4piuott1q3u1c7rdfbnl4spdb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDVDwEiYCz1aPINRglLJqZXxWyICWJhQk8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "514146284743-hsp9s1i4piuott1q3u1c7rdfbnl4spdb.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

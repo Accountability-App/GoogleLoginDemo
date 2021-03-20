@@ -1,0 +1,22 @@
+{
+  "appId": "com.AccountabilityApp.accapp",
+  "appName": "AccountabilityApp",
+  "bundledWebRuntime": false,
+  "npmClient": "npm",
+  "webDir": "www",
+  "plugins": {
+    "SplashScreen": {
+      "launchShowDuration": 0
+    },
+    "GoogleAuth": {
+      "scopes": [
+        "profile",
+        "email"
+      ],
+      "serverClientId": "514146284743-hsp9s1i4piuott1q3u1c7rdfbnl4spdb.apps.googleusercontent.com",
+      "forceCodeForRefreshToken": true
+    }
+  },
+  
+  "cordova": {}
+}
