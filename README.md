@@ -7,6 +7,12 @@ Status:
 + Reinstall VM 
 ! maybe install macOS
 ```
+## Resources
++ https://www.youtube.com/watch?v=Rs1imvTbeN0
++ https://www.youtube.com/watch?v=SyrS10a6Ctc
++ https://www.youtube.com/watch?v=lNqXCn8KacI
++ https://www.youtube.com/watch?v=xNleEVG9_yA
++ https://www.youtube.com/watch?v=RuuOdfz9Kxc&list=LL&index=2&t=997s
 
 For capacitor google sign in we need :
 ```
