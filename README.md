@@ -4,6 +4,8 @@ Status:
 -BROKEN AF
 @@ Redo tabs_login @@
 ! look into possible ionic github issues
++ Reinstall VM 
+! maybe install macOS
 ```
 
 For capacitor google sign in we need :
