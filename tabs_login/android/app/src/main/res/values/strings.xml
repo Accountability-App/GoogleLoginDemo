@@ -1,0 +1,8 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">tabs_login</string>
+    <string name="title_activity_main">tabs_login</string>
+    <string name="package_name">com.tabs_login.accapp</string>
+    <string name="custom_url_scheme">com.tabs_login.accapp</string>
+    <string name="server_client_id">514146284743-hsp9s1i4piuott1q3u1c7rdfbnl4spdb.apps.googleusercontent.com</string>
+</resources>
