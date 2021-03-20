@@ -3,6 +3,8 @@ import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { AlertController, LoadingController } from '@ionic/angular';
 import { Router } from '@angular/router';
+import '@codetrix-studio/capacitor-google-auth';
+import { Plugins } from '@capacitor/core';
 
 @Component({
   selector: 'app-login',
@@ -11,6 +13,7 @@ import { Router } from '@angular/router';
 })
 export class LoginPage implements OnInit {
   credentials: FormGroup;
+  googleInfo = null;
 
   constructor(
     private fb: FormBuilder,
@@ -22,8 +25,8 @@ export class LoginPage implements OnInit {
 
   ngOnInit() {
     this.credentials = this.fb.group({
-      email: ['eve.holt@reqres.in', [Validators.required, Validators.email]],
-      password: ['cityslicka', [Validators.required, Validators.minLength(6)]],
+      email: ['user@email.com', [Validators.required, Validators.email]],
+      password: ['password', [Validators.required, Validators.minLength(6)]],
     });
   }
   async login() {
@@ -55,6 +58,14 @@ export class LoginPage implements OnInit {
 
   get password() {
     return this.credentials.get('password');
+  }
+
+    async googleSignup() {
+    const googleUser = await Plugins.GoogleAuth.signIn() as any;
+    console.log('my user: ', googleUser);
+    this.googleInfo = googleUser;
+    const loading = await this.loadingController.create();
+    await loading.present();
   }
 
 }
