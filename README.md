@@ -2,6 +2,8 @@
 Status:
 ```diff
 -BROKEN AF
+@@ Redo tabs_login @@
+! look into possible ionic github issues
 ```
 
 For capacitor google sign in we need :
