@@ -4,7 +4,7 @@ Status:
 -BROKEN AF
 @@ Redo tabs_login @@
 ! look into possible ionic github issues
-+ Reinstall VM 
++ Reinstall VM [x]
 ! maybe install macOS
 ```
 ## Resources
