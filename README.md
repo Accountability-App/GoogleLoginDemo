@@ -7,10 +7,11 @@ Status:
 
 Building/Running:
 ```diff
-! 1st ionic build
++ cd tabs_login
++ ionic build
 + ionic serve -> web
-+ ionic capacitor run android
-! ionic capcitor run ios WiP
++ ionic capacitor run android (might have to change the path in capacitor json)
+! ionic capcitor run ios WiP 
 
 ```
 ## Resources
