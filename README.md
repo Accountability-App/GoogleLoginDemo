@@ -1,9 +1,7 @@
 # GoogleLoginDemo WIP
 Status:
 ```diff
--BROKEN AF
-@@ Redo tabs_login @@
-! look into possible ionic github issues
++ Working!
 + Reinstall VM [x]
 ! maybe install macOS
 ```
