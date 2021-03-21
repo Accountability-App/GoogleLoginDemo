@@ -2,7 +2,7 @@
 Status:
 ```diff
 + Working!
-! maybe install macOS
+! maybe install macOS so we can target ios
 ```
 
 Building/Running:
