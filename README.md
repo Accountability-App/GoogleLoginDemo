@@ -5,6 +5,15 @@ Status:
 + Reinstall VM [x]
 ! maybe install macOS
 ```
+
+Building/Running:
+```diff
+! 1st ionic build
++ ionic serve -> web
++ ionic capacitor run android
+! ionic capcitor run ios WiP
+
+```
 ## Resources
 + https://www.youtube.com/watch?v=Rs1imvTbeN0
 + https://www.youtube.com/watch?v=SyrS10a6Ctc
