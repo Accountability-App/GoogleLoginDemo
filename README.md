@@ -2,7 +2,6 @@
 Status:
 ```diff
 + Working!
-+ Reinstall VM [x]
 ! maybe install macOS
 ```
 
