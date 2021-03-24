@@ -1,7 +1,7 @@
 # GoogleLoginDemo WIP
 Status:
 ```diff
-+ Working!
+- Dep!
 ! maybe install macOS so we can target ios
 ```
 
